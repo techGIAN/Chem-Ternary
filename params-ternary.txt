@@ -1,0 +1,67 @@
+# These are the parameter list for the ternary plot
+# We separate the name of the parameter and its value by an equal sign
+# DO NOT change the parameter name as they are built in to the ternary plotter code
+# You can change the value of the parameter but note of the format (eg. wrap strings with SINGLE quotes,
+#   wrap lists with square brackets, booleans are True or False, etc.)
+# Spaces do not matter
+# Start comments on a new line. DO NOT write comments at the end of a parameter line. Always start 
+#   comments with a pound symbol
+
+# Prerequisite packages: pandas, numpy, sys, matplotlib, ternary
+# Matplotlib and Ternary are the most important packages
+# Installation for ternary: pip3 install python-ternary     -- assuming Python3; else use pip for Python2
+# Installation for matplotlib: pip3 install -U matplotlib
+
+# You can specify as many samples as you like in a list
+sample = ['jsc1402', 'shergotite', 'jsc1438']
+scale = 100
+multiple = 10
+
+# for marker options see: https://matplotlib.org/stable/api/markers_api.html
+# for color options see: https://matplotlib.org/stable/gallery/color/named_colors.html
+# You can specify as many markers and colors as you want
+markers = ['*', 'o']
+markercolors = ['red', 'green', 'blue', 'cyan', 'purple', 'orange', 'gray', 'goldenrod']
+markersizes = [200,50]
+gridlines = True
+gridline_colors = ['black', 'blue']
+gridline_linewidths = [0, 0.5]
+boundary_width = 1.5
+
+# scatter legend
+show_legend = True
+
+# labels are [bottom axis, right axis, left axis]
+# if you want default axes names, simply use '' or leave the list empty for the axes parameter
+show_axes = True
+axes = []
+fontsize_axes = 12
+offset_axes = 0.14
+
+# for the ticks
+tick_width = 1
+tick_multiple = 10
+tick_offset = 0.02
+
+# background color
+bg_color = 'whitesmoke'
+bg_alpha = 0.7
+
+# If show_title is False, plot will not have a title
+# Else, then the plot will have axis_title (unless if it's an empty string or just whitespaces),
+#   then it will have the default title
+show_title = True
+axis_title = ''
+fontsize_title = 18
+
+# Area size in inches (width x height)
+area_size_width = 8
+area_size_height = 8
+
+# save it?
+# If save_plot is True and directory is '', default directory name is ternary-composition-plots
+# save_overwrite parameter overwrites the saved directory (if it exsits) when True;
+#   otherwise, then new plots will simply be added to the directory
+save_plot = True
+directory = './ternary-composition-plots'
+save_overwrite = False
