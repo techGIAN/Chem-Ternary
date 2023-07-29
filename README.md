@@ -1,5 +1,5 @@
 # Chem-Ternary
-Simple Python Script for plotting geochemical samples on a ternary plot
+A Python Script for plotting geochemical samples on a ternary plot
 
 ![Chem-ternary-plot-example](./img/plot-img.png)
 
